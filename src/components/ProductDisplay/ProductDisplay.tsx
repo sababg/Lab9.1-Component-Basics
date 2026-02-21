@@ -7,6 +7,8 @@ function ProductDisplay({
   onAddToCart = () => {},
   children,
 }: ProductDisplayProps) {
+  //onAddToCart is optional and has default value, we send the product id to the parent and use it in there, to add the product
+  // to the array of cartItems
   return (
     <div className="flex items-center justify-start py-4">
       <div className="flex flex-row gap-3.5 border border-gray-300 rounded-2xl overflow-hidden">

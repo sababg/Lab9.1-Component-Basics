@@ -6,6 +6,7 @@ function AlertBox({
   onClose = () => {},
   children,
 }: AlertBoxProps) {
+  // onClose which is optional and has default value for the time we did not send anything for it, will close our alert
   const alertStyles = {
     success: "bg-green-100 border-green-500 text-green-700",
     error: "bg-red-100 border-red-500 text-red-700",

@@ -7,6 +7,7 @@ function UserProfileCard({
   onEdit = () => {},
   children,
 }: UserProfileCardProps) {
+  // onEdit, show Email and showRole, they are optional, we edit the profile in the parent and get the id with onEdit from here
   return (
     <div className="flex items-center justify-start py-4">
       <div className="border border-gray-300 p-5 w-auto rounded-2xl">
