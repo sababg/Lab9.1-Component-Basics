@@ -114,10 +114,10 @@ Shows product details with optional description/stock status and an “add to ca
 
 - `showDescription` _(optional)_: `boolean`
   - Whether to render the product description.
-  - **Special handling:** if omitted it behaves like `false` (description hidden).
+  - **Special handling:** if omitted, it behaves like `false` (description hidden).
 - `showStockStatus` _(optional)_: `boolean`
   - Whether to render the stock status text.
-  - **Special handling:** if omitted it behaves like `false` (stock status hidden).
+  - **Special handling:** if omitted, it behaves like `false` (stock status hidden).
 - `onAddToCart` _(optional)_: `(productId: string) => void`
   - Called when the “Add to Cart” button is clicked with `product.id`.
   - **Special handling:** defaults to a no-op function if not provided.
@@ -144,12 +144,12 @@ Shows product details with optional description/stock status and an “add to ca
 </ProductDisplay>
 ```
 
-## Notes on “special prop handling”
+## Notes on “special prop handling.”
 
 This project uses a few patterns that are helpful to know:
 
 - **Callback props default to no-op functions** in some components (e.g., `onClose`, `onEdit`, `onAddToCart`).  
-  This prevents runtime errors when a button is clicked but no handler is provided.
+  This prevents runtime errors when a button is clicked, but no handler is provided.
 - **Optional `imageUrl` / `avatarUrl` props control conditional rendering**: the `<img>` element is only shown when the URL exists.
 - **Boolean display flags** (`showEmail`, `showRole`, `showDescription`, `showStockStatus`) determine whether sections are rendered.
 
@@ -157,7 +157,7 @@ This project uses a few patterns that are helpful to know:
 
 How did you handle optional props in your components?
 
-- I used default value for them or Conditional rendering with && for optional content
+- I used the default value for them or Conditional rendering with && for optional content
 
 What considerations did you make when designing the component interfaces?
 
@@ -169,4 +169,14 @@ How did you ensure type safety across your components?
 
 What challenges did you face when implementing component composition?
 
-- Create the documentation is kind of challenging.
+- Creating the documentation is kind of challenging.
+
+  ##
+
+👤 Author
+Saba Beigi
+🌎 Charlotte, NC
+💼 GitHub @sababg
+📧 beigisaba@gmail.com
+
+Feel free to reach out with questions, feedback, or ideas!
